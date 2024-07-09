@@ -1,11 +1,11 @@
-#import the necessary module
+#import the necessary modules
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service as ChromeService
-from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.firefox.service import Service as FirefoxService
+from webdriver_manager.firefox import GeckoDriverManager
 import time
 
-#set the chromedriber manager
-driver=webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+#set the firefox driver
+driver=webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
 
 #set the website
 website_url='https://www.mindrisers.com.np/'
